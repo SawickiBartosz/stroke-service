@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Stroke Prediction</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <h1>Welcome to stroke predicting service</h1>
+    <p>Some description of the project</p>
+    <h2>Fill-in the form:</h2>
+     
+    <form action="" class="w3-row">
+        <div class="w3-half w3-panel">
+        <fieldset class="w3-card w3-round-large ">
+            <legend>Biological information</legend>
+            <div class="w3-container">
+                <h3>Gender</h3>
+                <input type="radio" name="sex" id="Female" value="Female"><label for="Female">Female</label>
+                <br>
+                <input type="radio" name="sex" id="Male" value="Male"><label for="Male">Male</label>
+                <br>
+                <input type="radio" name="sex" id="Other" value="Other"><label for="Other">Other</label>
+            
+            </div>
+            <div class="w3-container">
+                <h3>Age [in years]</h3>
+                <input type="number" name="age" id="age" min="1" max="150">
+            </div>
+            <div class="w3-container">
+                <h3>Body mass [in kg]</h3>
+                <input type="number" name="mass" id="mass" min="1">
+            </div>
+            <div class="w3-container">
+                <h3>Height [in cm]</h3>
+                <input type="number" name="height" id="height" min="1">
+            </div>
+            <div class="w3-container">
+                <h3>Average glucose level in blood [in mg/dL]</h3>
+                <input type="number" name="glucose" id="glucose" min="1">
+            </div>
+            <div class="w3-container">
+                <h3>Other health data</h3>
+                <input type="checkbox" name="hypertension" id="hypertension"><label for="hypertension">Hypertension</label><br>
+                <input type="checkbox" id="heart-disease" name="heart-disease"><label for="heart-disease">Heart disease</label>
+        </fieldset>
+    </div>
+    <div class="w3-half w3-panel">
+        <fieldset class="w3-card w3-round-large">
+            <legend>Social and behavioral information</legend>
+            <div class="w3-container">
+                <h3>Residence type</h3>
+                <input type="radio" name="residence" id="urban" value="urban"><label for="urban">Urban</label>
+                <br>
+                <input type="radio" name="residence" id="rural" value="rural"><label for="rural">Rural</label>
+            </div>
+            <div class="w3-container">
+                <h3>Ever married</h3>
+                <input type="radio" name="married" id="married" value="Yes"><label for="married">Yes</label>
+                <br>
+                <input type="radio" name="married" id="not_married" value="No"><label for="not_married">No</label>
+            </div>
+            <div class="w3-container">
+                <h3>Work type</h3>
+                <input type="radio" name="work" id="Private" value="Private"><label for="private">Private company</label>
+                <br>
+                <input type="radio" name="work" id="Govt_job" value="Govt_job"><label for="Govt_job">Government job</label>
+                <br>
+                <input type="radio" name="work" id="Self-employed" value="Self-employed"><label for="Self-employed">Self-employed</label>
+                <br>
+                <input type="radio" name="work" id="children" value="children"><label for="children">Children upbringing</label>
+                <br>
+                <input type="radio" name="work" id="Never_worked" value="Never_worked"><label for="Never_worked">Never worked</label>
+            </div>
+            <div class="w3-container">
+                <h3>Smoking</h3>
+                <input type="radio" name="smoking" id="never smoked" value="never smoked"><label for="never smoked">Never smoked</label>
+                <br>
+                <input type="radio" name="smoking" id="smokes" value="smokes"><label for="smokes">Smokes</label>
+                <br>
+                <input type="radio" name="smoking" id="formerly smoked" value="formerly smoked"><label for="formerly smoked">Formerly smoked</label>
+                <br>
+                <input type="radio" name="smoking" id="Unknown" value="Unknown"><label for="Unknown">Unknown</label>
+        </fieldset>
+        <input class="w3-panel" type="button" value="Get prediction" onclick="getPrediction()">
+    </div>
+    </form>
+    <h2>
+        Prediction:
+    </h2>
+    <h2>
+        Explanations:
+    </h2>
+</html>
