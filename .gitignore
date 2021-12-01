@@ -1,0 +1,3 @@
+modelling/stroke-venv/*
+backend/stroke-backend-env/*
+*.pyc
