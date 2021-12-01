@@ -55,13 +55,12 @@ def predict_proba(gender: str, age: float, hypertension: int,
 def hello_world():
     return loaded_objects['model'].n_features_in_
 
-origins = [
-	"https://spages.mini.pw.edu.pl/"
-]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+	    "*"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
