@@ -12,17 +12,7 @@ from starlette.requests import Request
 
 app = FastAPI()
 
-origins = [
-	"https://spages.mini.pw.edu.pl/"
-]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 loaded_objects:Dict = {}
 
 @app.on_event("startup")
@@ -64,3 +54,15 @@ def predict_proba(gender: str, age: float, hypertension: int,
 @app.get("/")
 def hello_world():
     return loaded_objects['model'].n_features_in_
+
+origins = [
+	"https://spages.mini.pw.edu.pl/"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
