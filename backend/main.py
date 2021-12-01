@@ -58,9 +58,8 @@ def hello_world():
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-	    "*"
-    ],
+    allow_origins=["https://spages.mini.pw.edu.pl",
+                    "http://spages.mini.pw.edu.pl"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
