@@ -13,7 +13,7 @@ from starlette.requests import Request
 app = FastAPI()
 
 origins = [
-	"https://spages.mini.pw.edu.pl/*"
+	"https://spages\.mini\.pw\.edu\.pl/*"
 ]
 
 app.add_middleware(
