@@ -42,7 +42,7 @@ def predict_proba(gender: str, age: float, ever_married: str, work_type: str,
         'smoking_status': [smoking_status]
     }
     mass = request_dict.pop('body_mass')[0]
-    height = request_dict.pop('body_height')[0]
+    height = request_dict.pop('body_height')[0] / 100
     bmi = mass / height**2
     request_dict['bmi'] = [bmi]
     data = pd.DataFrame.from_dict(request_dict)
