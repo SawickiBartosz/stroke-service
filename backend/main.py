@@ -23,10 +23,10 @@ def startup_event():
 # example query:
 #   ?gender=Male&age=67&hypertension=1&heart_disease=1&ever_married=Yes&work_type=Private&Residence_type=Urban&avg_glucose_level=200&body_mass=90&body_height=1.7&smoking_status=smokes
 @app.get("/stroke_proba")
-def predict_proba(gender: str, age: float, hypertension: int, 
-                    heart_disease: int, ever_married: str, work_type: str, 
+def predict_proba(gender: str, age: float, ever_married: str, work_type: str, 
                     Residence_type: str, avg_glucose_level: float, body_mass: float, 
-                    body_height: float, smoking_status: str):
+                    body_height: float, smoking_status: str, hypertension: int = 0, 
+                    heart_disease: int = 0,):
     brf = loaded_objects['model']
     request_dict = {
         'gender': [gender],
