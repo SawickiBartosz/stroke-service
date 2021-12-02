@@ -46,7 +46,7 @@ def predict_proba(gender: str, age: float, ever_married: str, work_type: str,
     bmi = mass / height**2
     request_dict['bmi'] = [bmi]
     data = pd.DataFrame.from_dict(request_dict)
-    return {'Proba' : brf.predict_proba(data)[1]}
+    return {'Proba' : brf.predict_proba(data)[0,1]}
     
 
 
