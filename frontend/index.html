@@ -13,7 +13,7 @@
     <p>Some description of the project</p>
     <h2>Fill-in the form:</h2>
      
-    <form action="" class="w3-row">
+    <form action="#" class="w3-row">
         <div class="w3-half w3-panel">
         <fieldset class="w3-card w3-round-large ">
             <legend>Biological information</legend>
@@ -46,6 +46,7 @@
                 <h3>Other health data</h3>
                 <input type="checkbox" name="hypertension" id="hypertension" value="1"><label for="hypertension">Hypertension</label><br>
                 <input type="checkbox" id="heart-disease" name="heart_disease" value="1"><label for="heart-disease">Heart disease</label>
+            </div>
         </fieldset>
     </div>
     <div class="w3-half w3-panel">
@@ -65,7 +66,7 @@
             </div>
             <div class="w3-container">
                 <h3>Work type</h3>
-                <input type="radio" name="work_type" id="Private" value="Private"><label for="private">Private company</label>
+                <input type="radio" name="work_type" id="Private" value="Private"><label for="Private">Private company</label>
                 <br>
                 <input type="radio" name="work_type" id="Govt_job" value="Govt_job"><label for="Govt_job">Government job</label>
                 <br>
@@ -77,21 +78,22 @@
             </div>
             <div class="w3-container">
                 <h3>Smoking</h3>
-                <input type="radio" name="smoking_status" id="never smoked" value="never smoked"><label for="never smoked">Never smoked</label>
+                <input type="radio" name="smoking_status" id="never_smoked" value="never smoked"><label for="never_smoked">Never smoked</label>
                 <br>
                 <input type="radio" name="smoking_status" id="smokes" value="smokes"><label for="smokes">Smokes</label>
                 <br>
-                <input type="radio" name="smoking_status" id="formerly smoked" value="formerly smoked"><label for="formerly smoked">Formerly smoked</label>
+                <input type="radio" name="smoking_status" id="formerly_smoked" value="formerly smoked"><label for="formerly_smoked">Formerly smoked</label>
                 <br>
                 <input type="radio" name="smoking_status" id="Unknown" value="Unknown"><label for="Unknown">Unknown</label>
+            </div>
         </fieldset>
         <input class="w3-panel" type="button" value="Get prediction" onclick="getPrediction()">
     </div>
     </form>
     <h2 id="prediction">
         Prediction:
-        <p id="predictionOut"></p>
     </h2>
+        <p id="predictionOut"></p>
     <h2>
         Explanations:
     </h2>
