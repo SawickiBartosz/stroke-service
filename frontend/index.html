@@ -3,14 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <title>Stroke Prediction</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="APIConnection.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    <h1>Welcome to stroke predicting service</h1>
-    <p>Some description of the project</p>
+    <h1>Welcome to the stroke predicting service!</h1>
+    <p>This tool enables you to find out how probably it is for you to get a stroke. Prediction value near 100% indicates that you are at high risk.
+        Prediction is made by Balance Random Forest classifier trained on <a href="https://www.kaggle.com/fedesoriano/stroke-prediction-dataset">Stroke Prediction Dataset.</a></p>
     <h2>Fill-in the form:</h2>
      
     <form action="#" class="w3-row">
@@ -94,7 +102,7 @@
         Prediction:
     </h2>
         <p id="predictionOut"></p>
-    <h2>
-        Explanations:
-    </h2>
+    <h2>What can you do if the score is high?</h2>
+    <p>More information on stroke prevention can be found on <a href="https://www.health.harvard.edu/womens-health/8-things-you-can-do-to-prevent-a-stroke">Harvard University website</a>.</p>
+    <p>It is advised to learn more about stroke symptoms, information on that can be found here: <a href="https://www.stroke.org.uk/what-is-stroke/what-are-the-symptoms-of-stroke">how to spot a stroke?</a></p>
 </html>
