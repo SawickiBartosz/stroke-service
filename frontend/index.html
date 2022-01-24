@@ -10,6 +10,11 @@
         <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <meta property="og:url"           content="https://spages.mini.pw.edu.pl/~sawickib/stroke-prediction/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Stroke prediction" />
+        <meta property="og:description"   content="Find out your chance of getting stroke" />
+        <meta property="og:image"         content="images/stroke-squared.jpg" />
         <title>Stroke Prediction</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -95,7 +100,22 @@
                 <input type="radio" name="smoking_status" id="Unknown" value="Unknown"><label for="Unknown">Unknown</label>
             </div>
         </fieldset>
-        <input class="w3-panel" type="button" value="Get prediction" onclick="getPrediction()">
+        <div class="buttonContainer">
+            <input class="w3-panel" type="button" value="Get prediction" onclick="getPrediction()">
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- facebook button -->
+        <div class="fb-share-button" data-href="https://spages.mini.pw.edu.pl/~sawickib/stroke-prediction/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspages.mini.pw.edu.pl%2F%7Esawickib%2Fstroke-prediction%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <!--twitter button -->
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://spages.mini.pw.edu.pl/~sawickib/stroke-prediction/" data-hashtags="stroke #strokePrediction" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>    
+    </div>
     </div>
     </form>
     <h2 id="prediction">
